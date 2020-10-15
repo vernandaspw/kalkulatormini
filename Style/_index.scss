@@ -1,0 +1,93 @@
+@import "./mix";
+
+body{
+    @include bgcb;
+}
+
+.index{
+    display: flex;
+    justify-content: center;
+
+
+    form{
+       margin-top: 110px;
+       padding: 45px;
+       
+       color: white;
+       @include borderrad;
+       @include shadow;
+       background-color: #070f4e;
+        input{
+            border: 0px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            padding: 5px;
+            
+        }
+
+        .judulform{
+            text-align: center;
+            margin-bottom: 15px;
+            @include coltext;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    
+        .filed1{
+            .judulfield{
+                padding-bottom: 3px;
+                @include coltext;
+            }
+        }
+        .filed2{
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .judulfield2{
+                padding-bottom: 3px;
+                @include coltext;
+            }
+        }
+        .tombol{
+            padding-top: 15px;
+            display: flex;
+            justify-content: center;
+
+            button{
+                margin: auto;
+                border: 0px;
+                border-radius: 3px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -ms-border-radius: 3px;
+                -o-border-radius: 3px;
+                
+                
+            }
+            .button1{
+                @include btntrue;
+                @include coltext;
+            }
+            .button1:hover{
+                box-shadow: 8px 9px 16px -4px rgba(0,0,0,0.75);
+            }
+
+            .button2{
+                @include btnfalse;
+                span:hover{
+                    color: red;
+                }
+            }
+            
+        }
+
+}
+
+
+
+
+
+}

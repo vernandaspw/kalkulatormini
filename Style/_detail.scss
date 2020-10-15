@@ -1,0 +1,62 @@
+@import "./mix";
+
+.detail{
+
+    display: flex;
+    justify-content: center;
+
+    .detailkonten{
+        @include borderrad;
+        margin-top: 50px;
+        padding: 45px;
+        background-color: #070f4e;
+        @include shadow;
+        @include coltext;
+        
+table{
+    font-size: 19px;
+}
+
+        .judul{
+            text-align: center;
+            margin-top: -10px;
+            font-weight: bolder;
+            font-size: 33px;
+        }
+        .tgl{
+            text-align: center;
+            color: yellow;
+        }
+
+        .dik{
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .jhasil{
+            font-weight: bold;
+            font-size: 23px;
+        }
+
+        .kembal{
+            text-decoration: none;
+            color: greenyellow;
+            box-shadow: 8px 9px 16px -4px rgba(0,0,0,0.75);
+}
+        .kembal:hover{
+            color: red;
+            box-shadow: 8px 9px 16px -4px rgba(0,0,0,0.75);
+}
+
+
+
+    }
+
+
+
+
+
+
+
+
+}
